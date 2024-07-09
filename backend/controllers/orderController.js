@@ -46,7 +46,7 @@ const placeOrder = async(req, res) => {
         const session = await stripe.checkout.sessions.create({
             line_items: line_items,
             mode: 'payment',
-            success_url: `https://food-delivery-app-frontend-yfa7.onrender.com/verify?success=true&orderId=${newOrder._id}`,
+            success_url: `https://food-delivery-app-frontend-yfa7.onrender.com`,
             cancel_url: `https://food-delivery-app-frontend-yfa7.onrender.com/verify?success=false&orderId=${newOrder._id}`,
         });
         
