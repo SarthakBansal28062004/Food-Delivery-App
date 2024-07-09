@@ -1,0 +1,171 @@
+.footer{
+    background-color: #f8f8f8;
+    padding: 50px 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 50px;
+    
+}
+
+.footer-title{
+   margin-bottom: 1px;
+   margin-top: 25px;
+}
+
+.footer-title h1{
+    font-weight: 500;
+}
+
+.footer-container{
+    display: flex;
+    padding: 30px 0px;
+    align-items: start;
+    gap: 100px;
+    margin-bottom: 50px;
+
+}
+
+.footer-about, .food-verse, .learn-more{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 20px;
+    width: 300px;
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+    gap: 20px;
+    width: 300px;
+}
+
+.footer-about p, .food-verse p, .learn-more p, .footer-socials p{
+    font-weight: 400;
+    font-size: 22px;
+    opacity: 0.9;
+}
+
+.footer-about ul, .food-verse ul, .learn-more ul, .footer-socials ul{
+    list-style: none;
+}
+
+.list li{
+    margin-top: 10px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.list li:hover{
+    opacity: 1;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 9px;
+}
+
+.icons img{
+    border-radius: 50%;
+    width: 35px;
+}
+
+.app_store{
+    width: 170px;
+    height: 50px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.app_store:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+
+.apps{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-copyright hr{
+    height: 1px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.footer-copyright p{
+    opacity: 0.7;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.footer-copyright p:hover{
+    opacity: 0.9;
+    transition: all .5s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+    .footer{
+        padding: 5px 80px;
+    }
+    .footer-container{
+        gap: 30px;
+        padding: 15px 0px;
+        margin-bottom: 10px;
+    }
+    .footer-copyright p{
+        margin-bottom: 15px;
+    }
+    .icons img{
+        width: 24px;
+    }
+    .app_store{
+        width: 130px;
+        height: 40px;
+    }
+    .footer-about p, .food-verse p, .learn-more p, .footer-socials p{
+        font-size: 18px;
+    }
+    .footer-title h1{
+        font-size: 24px;
+    }
+}
+
+@media(max-width:750px){
+    .footer-title h1{
+        display: none;
+    }
+    .footer-container{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer-container li{
+        font-size: 12px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+    .footer-about, .food-verse, .learn-more, .footer-socials{
+        width: 100%;
+    }
+    .footer-socials .icons{
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-socials .apps{
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-copyright p{
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,89 @@
+.collections{
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: 500;
+    font-family: Outfit;
+    color: #2b2b2b;
+    margin-bottom: 16px;
+}
+
+.para{
+    color: rgb(80, 80, 80);
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.collection-container{
+    display: flex;
+    align-items: start;
+    overflow-x: scroll;
+    padding: 10px 0px;
+    gap: 20px;
+}
+
+.collection-container::-webkit-scrollbar{
+    display: none;
+}
+
+.collection-container .collection{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 325px;
+    border-radius: 10px;
+    background-color: #fff;
+    background-size: cover;
+    position: relative;
+    box-shadow: inset 0px 0px 105px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.collection-container .collection img{
+    height: 100%;
+    border-radius: 10px;
+}
+
+.collection-container .collection h4{
+    position: absolute;
+    font-weight: 500;
+    bottom: 25px;
+    font-size: 20px;
+    background: linear-gradient(to right ,#9B4444,#6D2932, #561C24);
+    padding: 10px 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.collection-container .collection h4{
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .collection-container .collection{
+        height: 300px;
+        width: 270px;
+    }
+    .collection-container .collection h4{
+        font-size: 16px;
+    }
+    h2{
+        margin-bottom: 8px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 750px) {
+    .collection-container .collection{
+        height: 200px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 12px;
+    }
+}
+
