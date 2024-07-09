@@ -18,4 +18,4 @@ const assets = {
 
 export default assets;
 
-export const url = 'http://localhost:4000';
+export const url = 'https://food-delivery-app-backend-wbv5.onrender.com';
