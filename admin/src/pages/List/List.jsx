@@ -22,7 +22,7 @@ const List = ({url}) => {
     if(response.data.success){
       toast.success(response.data.message)
     }else{
-      toast.error(response.data.message)
+      toast.error(response)
     }
   }
 
