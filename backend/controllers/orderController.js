@@ -47,7 +47,7 @@ const placeOrder = async(req, res) => {
             line_items: line_items,
             mode: 'payment',
             success_url: `https://food-delivery-app-frontend-yfa7.onrender.com/verify?success=true&orderId=${newOrder._id}`,
-            cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
+            cancel_url: `https://food-delivery-app-frontend-yfa7.onrender.com/verify?success=false&orderId=${newOrder._id}`,
         });
         
         res.json({success: true, session_url: session.url});
